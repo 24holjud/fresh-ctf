@@ -8,6 +8,6 @@ def create_app():
     
     from .routes.ctf.ctfroute import CTFapp as ctf_blueprint
 
-    app.register_blueprint(ctf_blueprint, url_prefix='/ctf')
+    app.register_blueprint(ctf_blueprint, url_prefix='/')
 
     return app
